@@ -5,7 +5,8 @@
     email       varchar(255) not null,
     password    varchar(255) not null,
     fecha       date not null,
-    CONSTRAINT pk_usuarios PRIMARY KEY(id)
+    CONSTRAINT pk_usuarios PRIMARY KEY(id),
+    CONSTRAINT uq_email UNIQUE(email)
  );
 
  CREATE TABLE categorias(
